@@ -5,7 +5,7 @@ import Nombre from '../Nombre'
 const ListaNombres = ({ lista, remove }) => (
     <ul>
       {lista.map((item, index) => (
-      	<Nombre key={index} texto={item} remove={remove}/>
+      	<Nombre key={index} texto={item} remove={() => remove(index)}/>
       ))}
     </ul>
 )
