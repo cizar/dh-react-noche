@@ -10,7 +10,7 @@ class IngresoTexto extends React.Component {
 	render () {
 		return (
 			<form onSubmit={this.handleSubmit}>
-	          <input ref={el => this.campo = el} type="text" />
+	          <input className="button" ref={el => this.campo = el} type="text" />
 	        </form>
 		)
 	}
